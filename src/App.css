@@ -1,0 +1,22 @@
+.App {
+  width: auto;
+  height: 100%;
+}
+
+.light-theme {
+  background-color: white;
+  color: black;
+  --text-primary: var(--text-primary-light);
+  --text-secondary: var(--text-secondary-light);
+  --bg-primary: var(--bg-primary-light);
+  --bg-secondary: var(--bg-secondary-light);
+}
+
+.dark-theme {
+  background-color:  rgb(34, 34, 34);
+  color: white;
+  --text-primary: var(--text-primary-dark);
+  --text-secondary: var(--text-secondary-dark);
+  --bg-primary: var(--bg-primary-dark);
+  --bg-secondary: var(--bg-secondary-dark);
+}

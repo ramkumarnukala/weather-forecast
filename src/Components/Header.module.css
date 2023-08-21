@@ -1,0 +1,17 @@
+.headerContainer {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.headerIcon {
+    font-size: 28px;
+    margin: 5px;
+    cursor: pointer;
+    &:hover {
+        border-radius: 7px;
+        box-shadow: 0px 0px 3px rgb(143, 137, 137);
+    }
+}
