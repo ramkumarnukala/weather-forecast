@@ -7,12 +7,12 @@ import { ThemeContext } from "../Context/ThemeContext";
 import styled from "styled-components";
 
 const Header = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { toggleTheme } = useContext(ThemeContext);
 
   return (
     <div className={styles.headerContainer}>
       <div className={styles.headerIcons}>
-      <LinkedInIcon
+        <LinkedInIcon
           className={styles.headerIcon}
           onClick={() =>
             window.open("https://www.linkedin.com/in/ram-kumar-nukala/")

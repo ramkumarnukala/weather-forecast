@@ -1,14 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import { ThemeProvider } from './Context/ThemeContext';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import { ThemeProvider } from "./Context/ThemeContext";
+import { LocationProvider } from "./Context/LocationContext";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ThemeProvider>
-      <App />
+      <LocationProvider>
+        <App />
+      </LocationProvider>
     </ThemeProvider>
   </React.StrictMode>
 );
